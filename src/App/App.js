@@ -4,34 +4,34 @@ import React, {Component} from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Nav from '../Nav/Nav';
 import Form from '../Form/Form';
-import Wedder from '../Wedder/Wedder'
-
+import Weather from '../Weather/Weather'
 
 class App extends Component {
   constructor(){
     super()
     this.state = {
-      weather: [],
-      location: ""
+      
     } 
   }
 
-  // componentDidUpdate(){
-  //   apiCalls.getData()
-  //     .then(data => this.setState({weather: data.list}))
-  // }
+  handleChange = event => {
+      this.setState({ location: event.target.value })
+    }
 
-  render(){ 
-    return (
-      <main className="App">
-        <header>
-          <Nav/>
-        </header>
-        <section>
-            <Form/>    
-        </section>
-      </main>
-  )}
-}
+  apiCall = () => {
+      apiCalls.getData(this.state.location)
+          .then(data => this.setState({weather: data.list}))
+  }
 
-export default App;
+  componentDidUpdate = (prevState) => {
+      console.log(this.state) 
+      }
+
+  render() {
+      return (
+        <Form props={this.state}/>
+          )
+      } 
+  }
+
+export default App

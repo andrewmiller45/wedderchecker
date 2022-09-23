@@ -5,10 +5,12 @@ import './index.css';
 import App from './/App/App'
 import reportWebVitals from './reportWebVitals';
 
-const router = <BrowserRouter> <App /> </BrowserRouter>;
+const router = <BrowserRouter> <React.StrictMode> <App /> </React.StrictMode> </BrowserRouter>;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(router);
 
 reportWebVitals();
+
+

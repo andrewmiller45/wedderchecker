@@ -1,11 +1,12 @@
 import React from "react"
 import Form from '../Form/Form';
 import Card from '../Card/Card'
-import './Wedder.css'
+import './Weather.css'
 
 
-const Wedder = (wedder, location) => {
-    const weatherCards = wedder.map(day => {
+const Weather = (props) => {
+    console.log(props);
+    const weatherCards = props.weather.map(day => {
         return (
             <div key={day.dt}>
                 <Card id={day.dt} wind={day.wind.speed} humidity={day.main.humidity} hiTemp={day.temp_max} loTemp={day.temp_min} weatherman={day.weather.description}/>
@@ -15,9 +16,11 @@ const Wedder = (wedder, location) => {
     
     return (
         <div className="rainy-container">
-            {weatherCards.length ? weatherCards : <h1>Choose a location!</h1>}
+            {weatherCards.length ? weatherCards : <h1>Test!</h1>}
+            <h1>Choose a location!</h1>
         </div>
     )
-}
+    }
 
-export default Wedder
+
+export default Weather

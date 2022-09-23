@@ -5,7 +5,7 @@ import './Nav.css'
 const Nav = () => {
     return (
         <div className="Nav">
-            <h1>Hey Chuffy, where are you lookin'?</h1>
+            <h1>Wedder Checker - PNW Bouldering</h1>
         </div>
     )
 }

@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import apiCalls from '../apiCalls';
-import Wedder from '../Wedder/Wedder';
+import Weather from '../Weather/Weather';
 import './Form.css'
 
 class Form extends Component {
@@ -22,7 +22,7 @@ class Form extends Component {
     }
 
     componentDidUpdate = (prevState) => {
-        console.log(this.state) 
+        // console.log(this.state) 
         }
 
     render() {
@@ -35,7 +35,7 @@ class Form extends Component {
                     <option value="lostledge">Lost Ledge</option>
                 </select>
                 <button type="submit" value="submit" onClick={() => {this.apiCall()}}>Check it out</button>
-                {this.state.location && this.state.weather ? <Wedder wedder={this.state.weather} location={this.state.location}/> : <h1>Choose a zone!</h1>}
+                {!this.state.weather ? <h1>Choose a zone!</h1> : <Weather weather={this.state.weather} location={this.state.location}/> }
             </div> 
             )
         } 
