@@ -35,7 +35,7 @@ class Form extends Component {
                     <option value="lostledge">Lost Ledge</option>
                 </select>
                 <button type="submit" value="submit" onClick={() => {this.apiCall()}}>Check it out</button>
-                <Wedder wedder={this.state.weather} location={this.state.location}/>
+                {this.state.location && this.state.weather ? <Wedder wedder={this.state.weather} location={this.state.location}/> : <h1>Choose a zone!</h1>}
             </div> 
             )
         } 

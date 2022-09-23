@@ -1,42 +1,22 @@
 import React from "react"
 import Form from '../Form/Form';
+import Card from '../Card/Card'
 import './Wedder.css'
 
 
 const Wedder = (wedder, location) => {
+    const weatherCards = wedder.map(day => {
+        return (
+            <div key={day.dt}>
+                <Card id={day.dt} wind={day.wind.speed} humidity={day.main.humidity} hiTemp={day.temp_max} loTemp={day.temp_min} weatherman={day.weather.description}/>
+            </div>
+        )
+    })
+    
     return (
-    <div>
-        <h2>Gold Bar</h2>
-        <div className="wedder-icon">
-            <h3>9/24</h3>
-            <div className="rain-box">
-            <h4>Precip previous 48 hr:</h4>
-            <h5>.08in</h5>
-            </div>
-            <p>50º</p>
-            <p>Partly Cloudy</p>
+        <div className="rainy-container">
+            {weatherCards.length ? weatherCards : <h1>Choose a location!</h1>}
         </div>
-
-        <div className="wedder-icon">
-            <h3>9/24</h3>
-            <div className="rain-box">
-            <h4>Precip previous 48 hr:</h4>
-            <h5>.08in</h5>
-            </div>
-            <p>50º</p>
-            <p>Partly Cloudy</p>
-        </div>
-
-        <div className="wedder-icon">   
-            <h3>9/24</h3>
-            <div className="rain-box">
-            <h4>Precip previous 48 hr:</h4>
-            <h5>.08in</h5>
-            </div>
-            <p>50º</p>
-            <p>Partly Cloudy</p>
-        </div>
-    </div>  
     )
 }
 
