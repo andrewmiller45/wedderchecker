@@ -4,6 +4,7 @@ import React, {Component} from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Nav from '../Nav/Nav';
 import Form from '../Form/Form';
+import Wedder from '../Wedder/Wedder'
 
 
 class App extends Component {
@@ -27,10 +28,7 @@ class App extends Component {
           <Nav/>
         </header>
         <section>
-          <Switch>
-            <Form/>
-            
-          </Switch>
+            <Form/>    
         </section>
       </main>
   )}

@@ -1,5 +1,7 @@
 import React, {Component} from "react";
 import apiCalls from '../apiCalls';
+import Wedder from '../Wedder/Wedder';
+import './Form.css'
 
 class Form extends Component {
     constructor(){
@@ -14,13 +16,14 @@ class Form extends Component {
         this.setState({ location: event.target.value })
       }
 
-    componentDidUpdate(prevState) {
-        if(!prevState.location === this.state.location){
+    apiCall = () => {
         apiCalls.getData(this.state.location)
-            .then(data => this.setState({weather: data}))
-            .then(console.log(this.state))
-        }
+            .then(data => this.setState({weather: data.list}))
     }
+
+    componentDidUpdate = (prevState) => {
+        console.log(this.state) 
+        }
 
     render() {
         return (
@@ -31,9 +34,11 @@ class Form extends Component {
                     <option value="goldbar">Gold Bar</option>
                     <option value="lostledge">Lost Ledge</option>
                 </select>
-                {/* <button type="submit" onSubmit={() => {this.getData()}}>Check it out</button> */}
+                <button type="submit" value="submit" onClick={() => {this.apiCall()}}>Check it out</button>
+                <Wedder wedder={this.state.weather} location={this.state.location}/>
             </div> 
             )
         } 
-}   
+    }
+
 export default Form

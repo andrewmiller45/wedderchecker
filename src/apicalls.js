@@ -11,7 +11,6 @@ const apiCalls = {
             return rsp.json()
             }           
         })
-      .then(rsp => console.log(rsp.list))
     }
   }
 
