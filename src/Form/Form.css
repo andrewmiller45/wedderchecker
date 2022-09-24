@@ -1,3 +1,39 @@
+section{
+    margin: 0px;
+    height: 100vh;
+}
+
 button {
-    background-color: yellow;
+    margin: 2px;
+    background-color: #C8D5B9;
+    border-radius: 10%;
+}
+
+button:hover {
+    text-decoration:underline;
+    cursor: pointer;
+    box-shadow: 0px 0px 4px #000;
+    background-color: #68B0AB;
+  }
+
+.style-container{
+    display: flex;
+    padding: 25px;
+}
+
+.area-details{
+    text-align: left;
+    padding:5px;
+    overflow: auto;
+    box-shadow: 0 0 4px #000;
+    border-radius: 8px;
+}
+
+.choose-area{
+    margin: 10px;
+    
+}
+
+#zone{
+    margin: 5px;
 }

@@ -1,8 +1,8 @@
-*{
-    background-color: teal;
-    color: black;
-}
-
 #zone{
     background-color: white;
+}
+
+#title{
+    text-align: center;
+    font-size: 60px;
 }

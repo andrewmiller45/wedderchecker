@@ -1,4 +1,12 @@
+*{
+  margin:0;
+}
+
 .App {
   text-align: center;
+}
+
+main{
+  background-color: #FAF3DD;
 }
 

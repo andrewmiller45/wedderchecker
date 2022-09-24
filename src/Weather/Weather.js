@@ -24,7 +24,7 @@ const Weather = (props) => {
     
     return (
         <div className="rainy-container">
-            {weatherCards.length ? weatherCards : <h1>Choose a bouldering zone to see the weather</h1>}
+            {weatherCards.length ? weatherCards : <h1 id="waiting">Choose a bouldering zone to see the weather</h1>}
             
         </div>
     )

@@ -1,8 +1,18 @@
 .rainy-container{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 5px;
     grid-row-gap: 5px;
-    height: auto
+    height: 100vh;
+    overflow: auto;
+    box-shadow: 0 0 4px #000;
+    border-radius: 8px;
+    width: 60vw;
+}
+
+#waiting{
+    display: flex;
+    text-align: center;
+    font-size: 36px;
 }
