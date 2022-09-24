@@ -5,19 +5,27 @@ import './Weather.css'
 
 
 const Weather = (props) => {
-    console.log(props);
     const weatherCards = props.weather.map(day => {
+        console.log(day)
         return (
             <div key={day.dt}>
-                <Card id={day.dt} wind={day.wind.speed} humidity={day.main.humidity} hiTemp={day.temp_max} loTemp={day.temp_min} weatherman={day.weather.description}/>
+                <Card 
+                clouds={day.clouds.all}
+                date={day.dt_txt}
+                temp_hi={day.main.temp_max}
+                temp_lo={day.main.temp_min}
+                humidity={day.main.humidity}
+                outlook={day.weather[0].description}
+                wind={day.wind.speed}
+                />
             </div>
         )
     })
     
     return (
         <div className="rainy-container">
-            {weatherCards.length ? weatherCards : <h1>Test!</h1>}
-            <h1>Choose a location!</h1>
+            {weatherCards.length ? weatherCards : <h1>Choose a bouldering zone to see the weather</h1>}
+            
         </div>
     )
     }

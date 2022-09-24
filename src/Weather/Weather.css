@@ -1,8 +1,8 @@
-.wedder-icon {
-    border: 1px solid black;
-    margin: 10px;
-}
-
-.rain-box{
-    
+.rainy-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    height: auto
 }

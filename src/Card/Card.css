@@ -1,0 +1,14 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid black;
+    margin: 3px;
+    border-radius: 5%;
+    width: 500px;
+}
+
+.temp-box{
+    display: flex;
+    justify-content: center;
+}
