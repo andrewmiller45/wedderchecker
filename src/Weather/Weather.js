@@ -6,7 +6,6 @@ import './Weather.css'
 
 const Weather = (props) => {
     const weatherCards = props.weather.map(day => {
-        console.log(day)
         return (
             <div key={day.dt}>
                 <Card 
@@ -17,6 +16,7 @@ const Weather = (props) => {
                 humidity={day.main.humidity}
                 outlook={day.weather[0].description}
                 wind={day.wind.speed}
+                rain={day}
                 />
             </div>
         )

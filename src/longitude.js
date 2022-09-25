@@ -9,6 +9,10 @@ const longitude = {
 
     lostledge: {
         long: -122.461
+    },
+
+    seattle: {
+        long: 122.3321
     }
 }
 

@@ -9,6 +9,10 @@ const latitude = {
 
     lostledge: {
         lat: 48.658
+    },
+
+    seattle: {
+        lat: 47.6062
     }
 }
 
