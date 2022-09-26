@@ -1,3 +1,4 @@
+import PropTypes from "prop-types"
 import React from "react"
 import Form from '../Form/Form';
 import Card from '../Card/Card'
@@ -31,5 +32,11 @@ const Weather = (props) => {
     )
     }
 
-
 export default Weather
+
+
+Weather.propTypes = {
+    weather: PropTypes.shape({
+      map: PropTypes.func
+    })
+  }

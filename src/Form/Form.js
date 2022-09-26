@@ -4,6 +4,7 @@ import Weather from '../Weather/Weather';
 import './Form.css'
 import Gumby from '../Gumby/Gumby'
 import areaBlurbs from '../areaBlurbs'
+import PropTypes from 'prop-types'
 
 
 class Form extends Component {
@@ -53,3 +54,4 @@ class Form extends Component {
     }
 
 export default Form
+
