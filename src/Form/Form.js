@@ -41,7 +41,7 @@ class Form extends Component {
                     <button type="submit" value="submit" onClick={() => {this.apiCall()}}>Click for a weather report!</button>
                 </div>
                 <div>
-                    {!this.state.weather ? <h1>Cunnies so Bunny</h1> : <Weather weather={this.state.weather} location={this.state.location}/> }
+                    {!this.state.weather ? <h1>Cunnies so Bunny? Looks like that was a bad request.  Please try again later!</h1> : <Weather weather={this.state.weather} location={this.state.location}/> }
                 </div>
                 
                 <div className="area-details">
