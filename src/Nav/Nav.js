@@ -8,7 +8,7 @@ const Nav = () => {
     return (
         <div className="Nav">
             <h1 id="title">Wedder Checker - PNW Bouldering</h1>
-                <NavLink to='/gumby'>
+                <NavLink id="gumby" to='/gumby'>
                     Gumby Guide
                 </NavLink>
         </div>

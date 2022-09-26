@@ -6,7 +6,7 @@ import './Gumby.css'
 const Gumby = () => {
   return (
     <main>
-        <Link to={'/'}>Home</Link>
+        <Link id="homeLink" to={'/'}>Home</Link>
         <div>
             <h1 className="new">New to Washington? Start here:</h1>
         </div>
@@ -14,7 +14,7 @@ const Gumby = () => {
             <div className="resource-link">
                 <h3>Free Online Guides</h3>
                 <ul>
-                <li><a href={areaBlurbs.leavenworth.mtnProj}>Leavenworth</a></li>
+                <li><a id='tester' href={areaBlurbs.leavenworth.mtnProj}>Leavenworth</a></li>
                 <li><a href={areaBlurbs.goldbar.mtnProj}>Gold Bar</a></li>
                 <li><a href={areaBlurbs.lostledge.mtnProj}>Lost Ledge</a></li>
                 </ul>

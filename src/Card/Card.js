@@ -9,7 +9,7 @@ const Card = ({clouds, date, temp_hi, temp_lo, humidity, outlook, wind}) => {
                 <h1>{date}</h1>
                 <h2>{outlook}</h2>
                 <div className="temp-box">
-                    <p>Temp: {temp_hi}</p>
+                    <p>Temp: {(((temp_hi-273.15)*1.8)+32).toFixed(0)}º</p>
                 </div>
                 <p>Humidity: {humidity}%</p>
                 <p>Wind: {wind} mph</p>
