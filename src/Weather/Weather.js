@@ -6,6 +6,7 @@ import './Weather.css'
 
 const Weather = (props) => {
     const weatherCards = props.weather.map(day => {
+
         return (
             <div key={day.dt}>
                 <Card 
