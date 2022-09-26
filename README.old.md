@@ -8,10 +8,6 @@
 ## Setup
 - View the deployed site [here](https://andrewmiller45.github.io/wedderchecker/)
 
-## Application in Action
-
-
-
 ## Technologies
   - React
   - XML
