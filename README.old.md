@@ -6,7 +6,7 @@
   - There was an additional page built for out-of-towners to visit for guidebook, local gyms, and free online resources to help improve their experience while in Washington.
   
 ## Setup
-
+- View the deployed site [here](https://andrewmiller45.github.io/wedderchecker/)
 
 ## Application in Action
 
