@@ -11,14 +11,19 @@ class App extends Component {
   constructor(){
     super()
     this.state = {
-      location: '',
+      location: 'seattle',
       weather: []
     } 
   }
 
-  componentDidMount(){
-    // this.apiCall()
+  // componentDidMount(){
+    
+  //   console.log(this.state)
 
+  // }
+
+  componentDidUpdate(){
+    console.log(this.state)
   }
 
   handleChange = event => {
