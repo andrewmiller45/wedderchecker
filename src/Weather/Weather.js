@@ -36,7 +36,5 @@ export default Weather
 
 
 Weather.propTypes = {
-    weather: PropTypes.shape({
-      map: PropTypes.func
-    })
+    weather: PropTypes.any
   }
