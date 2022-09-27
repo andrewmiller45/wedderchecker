@@ -15,7 +15,7 @@ const apiCalls = {
     }
   }
 
-  export default {apiCalls}
+  export default apiCalls
 
   //andy test
 
