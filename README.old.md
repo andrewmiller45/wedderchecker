@@ -46,4 +46,4 @@
 
 ## Project Specs
 
- - The project repo can be found [here](https://github.com/andrewmiller45/wedderchecker)
+ - The project repo can be found [here](https://wedderchecker-dhl3-andrewmiller45.vercel.app/)
