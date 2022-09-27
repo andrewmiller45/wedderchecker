@@ -17,7 +17,7 @@ class App extends Component {
   }
 
   componentDidMount(){
-    this.apiCall()
+    // this.apiCall()
 
   }
 

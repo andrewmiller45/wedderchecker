@@ -1,6 +1,5 @@
 import PropTypes from "prop-types"
 import React from "react"
-import Form from '../Form/Form';
 import Card from '../Card/Card'
 import './Weather.css'
 
@@ -36,5 +35,5 @@ export default Weather
 
 
 Weather.propTypes = {
-    weather: PropTypes.any
+    weather: PropTypes.array
   }

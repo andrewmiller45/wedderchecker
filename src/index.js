@@ -5,7 +5,7 @@ import './index.css';
 import App from './/App/App'
 import reportWebVitals from './reportWebVitals';
 
-const router = <BrowserRouter> <React.StrictMode> <App /> </React.StrictMode> </BrowserRouter>;
+const router = <BrowserRouter> <App />  </BrowserRouter>;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
