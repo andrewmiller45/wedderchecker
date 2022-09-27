@@ -3,7 +3,7 @@
 
 describe('Home view', () => {
   beforeEach(() => {
-    // cy.intercept('GET','api.openweathermap.org/data/2.5/forecast?lat=25.5788&lon=91.8933&appid=d58003e6ade0f906bde1fcfb2fe9449b&units=standard', {fixture: `recentData.json`}) //This link is dynamic and will change tomorrow.
+    cy.intercept('api.openweathermap.org/data/2.5/forecast?lat=47.542&lon=-120.728&appid=d58003e6ade0f906bde1fcfb2fe9449b&units=standard', {fixture: `recentData.json`}) //This link is dynamic and will change tomorrow.
     cy.visit('http://localhost:3000/')
   })
 
